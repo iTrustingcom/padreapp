@@ -63,6 +63,16 @@ nav{display:flex; align-items:center; justify-content:space-between; height:68px
 .mobile-panel a:last-child{border-bottom:none;}
 .mobile-panel a:hover{color:var(--up);}
 
+@media(max-width:480px){
+  .wrap{padding:0 16px;}
+  nav{height:60px;}
+  .logo-img, .logo-img svg{height:18px;}
+  .nav-right{gap:6px;}
+  .nav-cta{padding:8px 12px; font-size:12.5px;}
+  .hamburger{width:32px; height:32px;}
+  .hamburger svg{width:16px; height:16px;}
+}
+
 /* breadcrumb */
 .crumb{font-family:'JetBrains Mono',monospace; font-size:12.5px; color:var(--muted); padding:24px 0 0;}
 .crumb a:hover{color:var(--up);}
