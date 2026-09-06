@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <title>Padre Terminal — The Fastest On-Chain Trading Terminal, 35% Fee Cashback</title>
-<meta name="description" content="Trade on-chain assets across Solana, Ethereum, Base and BNB Chain with ~300ms execution. Get up to 35% of your trading fees back automatically.">
+<meta name="description" content="Trade on Padre Terminal (Padre GG) across Solana, Ethereum, Base and BNB Chain with ~300ms execution. Get up to 35% of your trading fees back automatically.">
 <meta property="og:title" content="Padre Terminal — Get 35% Cashback On Every Trade">
-<meta property="og:description" content="~300ms execution, 4 networks supported, 2FA-secured. Start trading today.">
+<meta property="og:description" content="Padre Terminal (Padre GG): ~300ms execution, 4 networks supported, 2FA-secured. Start trading today.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Padre Terminal Trading">
 <meta property="og:url" content="https://padreapp.com/">
@@ -132,7 +132,13 @@
   .hero-grid{
     display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:center;
   }
-  @media(max-width:900px){ .hero-grid{grid-template-columns:1fr;} }
+  @media(max-width:900px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-grid > div:first-child{text-align:center;}
+    .hero p.sub{margin-left:auto; margin-right:auto;}
+    .cta-row{justify-content:center;}
+    .hero-stats{justify-content:center;}
+  }
 
   .eyebrow{
     display:inline-flex; align-items:center; gap:8px;
@@ -256,7 +262,11 @@
     background:radial-gradient(circle, rgba(134,239,172,0.18), transparent 70%);
     right:-100px; top:-120px; pointer-events:none;
   }
-  @media(max-width:800px){ .cashback{grid-template-columns:1fr; padding:36px 26px;} }
+  @media(max-width:800px){
+    .cashback{grid-template-columns:1fr; padding:36px 26px; text-align:center;}
+    .cashback p{margin-left:auto; margin-right:auto;}
+    .cashback .btn-primary{display:inline-flex;}
+  }
   .cashback h2{font-size:clamp(24px,3vw,34px); margin-bottom:14px;}
   .cashback p{color:var(--muted); margin-bottom:26px; max-width:440px;}
   .big-num{font-family:'JetBrains Mono',monospace; font-size:clamp(64px,9vw,110px); font-weight:600; color:var(--up); line-height:1; text-align:center; text-shadow:0 0 40px rgba(134,239,172,0.35);}
@@ -548,8 +558,8 @@
           <div class="faq-a"><p>This is an independent referral page linking to the official trading terminal. See the disclosure at the bottom of this page for details.</p></div>
         </div>
         <div class="faq-item">
-          <div class="faq-q">Is "Padre" the same as "Terminal"? <span class="plus">+</span></div>
-          <div class="faq-a"><p>Yes. The platform was rebranded from Padre to Terminal after being acquired by Pump.fun in October 2025 — same trading engine and self-custody model, new name and ownership. Read the <a class="inline-link" href="/blog/padre-now-called-terminal.html" style="color:var(--up); border-bottom:1px solid rgba(134,239,172,0.4);">full rebrand explainer</a> for details.</p></div>
+          <div class="faq-q">Is "Padre" the same as "Terminal"? What about "Padre GG"? <span class="plus">+</span></div>
+          <div class="faq-a"><p>Yes — Padre Terminal, Padre GG, and simply "Terminal" all refer to the same platform. The trading URL itself (trade.padre.gg) is where the "Padre GG" name comes from. The platform was rebranded from Padre to Terminal after being acquired by Pump.fun in October 2025 — same trading engine and self-custody model, new name and ownership. Read the <a class="inline-link" href="/blog/padre-now-called-terminal.html" style="color:var(--up); border-bottom:1px solid rgba(134,239,172,0.4);">full rebrand explainer</a> for details.</p></div>
         </div>
       </div>
     </div>
